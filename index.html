@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Code Compiler</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container d-grid gap-3">
+        <div class="row p-2">
+            <ul class="nav">
+                <li class="nav-item">
+                    <label>Language:&nbsp;</label>
+                    <select id="lang">
+                        <option value="c" selected>C</option>
+                        <option value="cpp">C++</option>
+                        <option value="java">Java</option>
+                        <option value="python">Python</option>
+                        <option value="javascript">Javascript</option>
+                    </select>
+                </li>
+                <li class="nav-item">
+                    <label>&nbsp;&nbsp;Theme:</label>
+                    <select id="theme">
+                        <option value="github">Github</option>
+                        <option value="dracula">Dracula</option>
+                        <option value="monokai" selected>Monokai</option>
+                        <option value="terminal">Terminal</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+        <div class="row">
+            <div id="editor" style=" height:500px">
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button type="button" id="submit" class="btn btn-warning">
+                    Submit
+                </button>
+            </div>
+        </div>
+        <div class="row p-2">
+            Console:
+        </div>
+        <div id="console" class="row bg-dark text-white p-2" style="height:100px">
+
+        </div>
+        <div class="row" style="height:100px">
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"
+        integrity="sha512-GZ1RIgZaSc8rnco/8CXfRdCpDxRCphenIiZ2ztLy3XQfCbQUSCuk8IudvNHxkRA3oUg6q0qejgN/qqyG1duv5Q=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ext-language_tools.min.js"
+        integrity="sha512-8qx1DL/2Wsrrij2TWX5UzvEaYOFVndR7BogdpOyF4ocMfnfkw28qt8ULkXD9Tef0bLvh3TpnSAljDC7uyniEuQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src = './index.js'>
+    </script>
+</body>
+
+</html>
